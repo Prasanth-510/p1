@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+  height: 50px;
+}
+
+app-sidebar {
+  width: 220px;
+  background: #343a40;
+  color: #fff;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 10px;
+}

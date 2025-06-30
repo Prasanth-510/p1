@@ -1,0 +1,56 @@
+
+.sidebar li i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  width: 20px;
+  text-align: center;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: #7a7b7c;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  background-color: #9a70e7;
+  color: #ffffff;
+}
+
+
+
+
+ul ul.sub-menu {
+  list-style: none;
+  padding-left: 15px;
+}
+
+ul ul.sub-menu li a {
+  font-size: 0.9rem;
+  color: #ddd;
+  display: block;
+  padding: 5px 0;
+}
+
+ul ul.sub-menu li a:hover {
+  color: #fff;
+}

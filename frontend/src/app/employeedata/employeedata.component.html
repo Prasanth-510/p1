@@ -1,17 +1,21 @@
-<h2>Upload Excel File to MongoDb Atlas</h2>
-<input type="file" (change)="onFileChange($event)" />
-<button (click)="uploadExcel()">Upload</button>
 
-<h3>Uploaded Data Fetch from MongoDb Atlas</h3>
-<table *ngIf="uploadedData.length > 0" border="1">
-  <thead>
-    <tr>
-      <th *ngFor="let key of uploadedData[0] | keyvalue">{{ key.key }}</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let row of uploadedData">
-      <td *ngFor="let key of row | keyvalue">{{ key.value }}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="body">
+  <h2>Upload Excel File to MongoDb Atlas</h2>
+  <input type="file" (change)="onFileChange($event)" />
+  <button (click)="uploadExcel()">Upload</button>
+
+  <h3>Uploaded Data Fetch from MongoDb Atlas</h3>
+  <table *ngIf="uploadedData.length > 0" border="1">
+    <thead>
+      <tr>
+        <th *ngFor="let key of uploadedData[0] | keyvalue">{{ key.key }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let row of uploadedData">
+        <td *ngFor="let key of row | keyvalue">{{ key.value }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

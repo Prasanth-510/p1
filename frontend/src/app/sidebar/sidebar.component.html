@@ -1,0 +1,27 @@
+<div class="sidebar">
+  <ul>
+    <li>
+        <i class="fa fa-tachometer-alt"></i>
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+    </li>
+    
+    <li><a routerLink="/tnManagement" routerLinkActive="active">TN Management</a></li>
+
+    <li>
+      <a href="javascript:void(0)" (click)="toggleFresher()">
+        Fresher Management ▼
+      </a>
+      @if(showFresher){
+        <ul  class="sub-menu">
+            <li><a routerLink="/fresherManagement/list" routerLinkActive="active">Fresher List</a></li>
+            <li><a routerLink="/fresherManagement/add" routerLinkActive="active">Add Fresher</a></li>
+            <li><a routerLink="/fresherManagement/assign" routerLinkActive="active">Assign Courses</a></li>
+        </ul>
+      }
+    </li>
+
+    <li><a routerLink="/reviewReports" routerLinkActive="active">Review Reports</a></li>
+    <li><a routerLink="/courses" routerLinkActive="active">Courses</a></li>
+    <li><a routerLink="/notifications" routerLinkActive="active">Notifications</a></li>
+  </ul>
+</div>
